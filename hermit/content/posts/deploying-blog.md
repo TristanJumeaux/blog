@@ -7,7 +7,11 @@ title: How did I deployed this blog
 ## Introduction
 
 This blog post will explain you quickly how I deployed this website powered by Hugo and hosted by AWS.  <br  />
-It is composed of an introduction to Hugo and an explanation of the AWS process.  <br  />
+
+First of all, I have created this blog as a student. Hence, I am aware that every isn't perfect. 
+Feel free to give me any tips or potential improvements.<br  />
+
+This post is composed of an introduction to Hugo and an explanation of the AWS process.  <br  />
 The goal is to regroup the resources that helped me building it. You will find many redirection to official tutorials. 
 Let's start by exploring Hugo.
 
