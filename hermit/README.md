@@ -1,1 +1,0 @@
-Repository of my personal blog hosted on AWS : tristanjumeaux.com.
