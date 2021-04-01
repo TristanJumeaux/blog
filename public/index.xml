@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog</title>
+    <link>https://tristanjumeaux.com/</link>
+    <description>Recent content on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tristanjumeaux.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Hive : My understanding, walkthrough a request</title>
+      <link>https://tristanjumeaux.com/posts/hive-my-understanding/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tristanjumeaux.com/posts/hive-my-understanding/</guid>
+      <description>It’s been two months now that I’ve started my first job as a Data Engineer. My daily work involves interactions with Hadoop’s HDFS, Hbase and Hive. I’ve got to say that it is an exciting period ! I’m learning tons of new stuff. Anyway, let’s dive in Hive !
+What&amp;rsquo;s Hive ? Used on top of file systems (HDFS, S3,..) Hive allows you to do data warehousing. You can create databases and tables that you can request as in other databases.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://tristanjumeaux.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tristanjumeaux.com/about/</guid>
+      <description>I am a Data Engineer currently working for Ippon Technologies. As a consultant for a bank, my daily work implies interactions with Spark, Hadoop, Hive or Hbase. On a personal note, I have a strong interest for distributed systems and data.
+Experiences 10/2020 - Today : Data Engineer @IpponTechnologies 09/2019 - 09/2020 : Data Engineer @CEGEDIM As a part of Cegedim R&amp;amp;D, I worked around two projects :
+ Geo-marketing : creation of a tool which allows pharmaceutical companies to have targeted marketing campaign.</description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://tristanjumeaux.com/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tristanjumeaux.com/archives/</guid>
+      <description>archives</description>
+    </item>
+    
+  </channel>
+</rss>

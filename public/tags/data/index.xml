@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Blog</title>
+    <link>https://tristanjumeaux.com/tags/data/</link>
+    <description>Recent content in Data on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tristanjumeaux.com/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Hive : My understanding, walkthrough a request</title>
+      <link>https://tristanjumeaux.com/posts/hive-my-understanding/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tristanjumeaux.com/posts/hive-my-understanding/</guid>
+      <description>It’s been two months now that I’ve started my first job as a Data Engineer. My daily work involves interactions with Hadoop’s HDFS, Hbase and Hive. I’ve got to say that it is an exciting period ! I’m learning tons of new stuff. Anyway, let’s dive in Hive !
+What&amp;rsquo;s Hive ? Used on top of file systems (HDFS, S3,..) Hive allows you to do data warehousing. You can create databases and tables that you can request as in other databases.</description>
+    </item>
+    
+  </channel>
+</rss>

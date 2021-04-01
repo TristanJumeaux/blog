@@ -1,0 +1,88 @@
+baseURL: "https://tristanjumeaux.com/"
+title: Blog
+paginate: 5
+theme: paperMod
+googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    #minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        menu:
+            main:
+                - name: Blog
+                  url: archives/
+                  weight: 5
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: About
+                  url: about/
+                  weight: 10
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Blog
+    description: "Personal blog of Tristan Jumeaux"
+    author: Tristan Jumeaux
+    # author: ["Me", "You"] # multiple authors
+    #: ["<link or path of image for opengraph, twitter-cards>"]
+
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: false
+    disableSpecial1stPost: false
+    comments: false
+    hidemeta: false
+    showtoc: false
+    tocopen: true
+
+
+    profileMode:
+        enabled: true
+        title: Tristan Jumeaux
+        subtitle: "Welcome to my blog !"
+
+    label:
+        text: "Home"
+        iconHeight: 35
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/Tristan_Jumeaux/"
+        - name: linkedin
+          url: "https://linkedin.com/in/tristan-jumeaux/"
+        - name: github
+          url: "https://github.com/TristanJumeaux/"
+
+    assets:
+        disableFingerprinting: true
+
+    analytics:
+        google:
+            SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+
+taxonomies:
+    tag: tags
