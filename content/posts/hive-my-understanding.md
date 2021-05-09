@@ -15,12 +15,12 @@ I’ve got to say that it is an exciting period ! I’m learning tons of new stu
 Anyway, let’s dive in Hive !
 
 
-### What's Hive ?
+## What's Hive ?
 
 Used on top of file systems (HDFS, S3,..) Hive allows you to do data warehousing. You can create databases and tables that you can request as in other databases.
 Initially developed by Facebook in the early 2010s, it became very popular among companies handling important volumes of data.
 
-### Why ? 
+## Why ? 
 
 Everything comes from trying to analyze important volumes of data. 
 To do so, back in the 2010s, we had to think and work with MapReduce. 
@@ -31,11 +31,11 @@ It would have been hard for them to switch to the MapReduce paradigm.
 These observations led to the creation of [Hive](https://hive.apache.org/), a data warehouse for large datasets ! 
 How did they fill these needs ?
 
-### Architecture
+## Architecture
 
 ![s3bucket](/images/archi_hive.png)
 
-#### Requesting 
+### Requesting 
 
 To begin with, Hive can receive requests from several sources.
 
@@ -47,7 +47,7 @@ To summarize, HiveServer2 is an interface that receives remote requests, transmi
 
 Also, Hive provides a CLI called Beeline. It bypasses the HiveServer2 and communicates directly with the Driver.
 
-#### Request translation
+### Processing
 
 Let’s assume that we have a request that has been transmitted to Hive.
 
@@ -74,7 +74,7 @@ Here are 4 bullet points summing up compiler's actions :
 
 Here, we realize what’s great about Apache Hive. Remember what we talked about during the introduction ? Now we have a product that creates Map/Reduce jobs from SQL requests. This is great. But the job isn’t finished !
 
-#### Execution
+### Retrieving
 
 As Mike Goldberg said powerfully, __Here we go__ ! It’s time to execute our request!
 In order to do so, we need to find an execution engine that allows us to process MapReduce on HDFS.
@@ -89,7 +89,7 @@ At the end, the execution engine will send back the results to the Driver which 
 
 This is how Hive processes SQL requests on high volumes of data.
 
-### What’s my usage of Hive ?
+## What’s my usage of Hive ?
 
 During my daily work, Hive has several use cases.
 
@@ -99,7 +99,7 @@ The second one, a similar one, is for technical teams.
 When there is a problem detected by the Analysts, having Hive tables allows us to understand where the various errors came from.
 Similarly, when developing and running a new feature, having Hive tables at some key steps helps us to monitor progress.
 
-### Business value
+## Business value
 
 The main value lies when a company is dealing with important volumes of data in a Hadoop cluster. Hive is a product that can leverage a significant ROI. It gives you visibility about your datas.
 
@@ -107,7 +107,7 @@ Moreover, the possibility to request in an SQL like syntax is cost and time savi
 
 To end with, Cloudera now offers support around Apache Hive. They can help you with your implementation and usage. It can be a nice help for companies entering the Data world.
 
-### Conclusion 
+## Conclusion 
 
 This blog post is about to end ! 
 We’ve seen Hive architecture and how it processes a request.
