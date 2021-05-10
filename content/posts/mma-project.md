@@ -1,7 +1,7 @@
 ---
 author: "Tristan Jumeaux"
 title: "Jaro-Winkler, Levenshtein & Mixed Martial Arts"
-date: "2021-04-25"
+date: "2021-05-09"
 description: "Find out about the career of a fighter without spoiling yourself the results !"
 weight: 1
 tags: ["Data","Fun", "Project"]
@@ -20,8 +20,8 @@ I wanted to make a quick article about the main algorithms that I've learned abo
 
 # Context 
 
-As Human beings, we make mistakes ! Often we mistype while writing or just make a grammatical error.
-Hence, I want my script to be able to find the fighter I am referencing to when I launch my script, even though there is a small mistake!
+As Human beings, we make mistakes ! Often we mistype while writing or we simply make a grammatical error.
+This is why I want my script to be able to find the fighter I am referencing to, even though there is a small error!
 
 For example, if I write _Mikal Biesping_ instead of _Michael Bisping_, I want to find it anyway.
 
@@ -29,7 +29,7 @@ There are several algorithms to fix this issue. Let's dive into them !
 
 # Ratcliff-Obershelp
 
-This first algorithm might be the most used. 
+This first algorithm might be one of the most used in the Python world. 
 Indeed, it is embedded by default in Python now. You can access it by using the difflib SequenceMatchers module.
 
 How does it work ?
@@ -53,7 +53,7 @@ def _calculate_ratio(matches, length):
 ```
 Here, the parameter _matches_ represents the sum of the common substring sizes and _length_ is the sum of both strings lengths.
 
-Eventually, the ratio divides put matches at scale and divides it by the total length of both strings.
+Eventually, the ratio put matches at scale and divides it by the total length of both strings.
 
 For our example, we get a ratio of (2*12)/29 which is 0.8275.
 
@@ -62,4 +62,34 @@ Let's move on to Levenshtein.
 
 # Levenshtein
 
+The Levenshtein method is quite different but as easy to understand.
+The main idea is that we are going to compute a distance between two strings based on those operations : 
+
+* Insertion of caracter
+* Deletion of caracter
+* Substition of caracter
+
+Each one of these operations are worth the same distance.
+If we compare _fighter_ and _fighters_ or _fightar_, the Levenshtein distance would be for both 1 as we have to do either an insertion (of "s"), or a substition ("a" to "e").
+
+There are then, several way to normalize the result if you want to get a ratio.
+A common way is to divide the Levenshtein distance by the length of the longest string parameter.
+
+Still for _fighter_ and _fightar_ our ratio would be 
+
+```
+1-(levenshtein_distance/max(len("fighter"),len("fightar")))
+```
+
+Or approximatively 0.85.
+
+That's it for Levenshtein. We will not deep dive into Levenshtein today as there is a lot to say about it.
+Instead, let's find out about the last interesting one that I found for my problem : Jaro-Winkler !
+
 # Jaro-Winkler
+
+
+
+
+
+
