@@ -75,21 +75,22 @@ If we compare _fighter_ and _fighters_ or _fightar_, the Levenshtein distance wo
 There are then, several way to normalize the result if you want to get a ratio.
 A common way is to divide the Levenshtein distance by the length of the longest string parameter.
 
-Still for _fighter_ and _fightar_ our ratio would be 
+Still for _fighter_ and _fightar_ our ratio would be :
 
 ```
-1-(levenshtein_distance/max(len("fighter"),len("fightar")))
+ratio = 1 - (levenshtein_distance/max(len("fighter"),len("fightar")))
 ```
 
 Or approximatively 0.85.
 
-That's it for Levenshtein. We will not deep dive into Levenshtein today as there is a lot to say about it.
+That's it for Levenshtein. We will not deep dive into Levenshtein's algorithm today as there is a lot to say about it.
 Instead, let's find out about the last interesting one that I found for my problem : Jaro-Winkler !
 
 # Jaro-Winkler
 
+This one might not be the most popular but it got my attention because when I was looking for a solution, it appeared that it was really good for short strings as person names. It seems perfect! 
 
-
+Jaro-Winkler starts by computing the Jaro distance.
 
 
 
