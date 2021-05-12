@@ -88,9 +88,16 @@ Instead, let's find out about the last interesting one that I found for my probl
 
 # Jaro-Winkler
 
-This one might not be the most popular but it got my attention because when I was looking for a solution, it appeared that it was really good for short strings as person names. It seems perfect! 
+This one might not be the most popular algorithm but it got my attention because when I was looking for a solution, it appeared that it was really good for short strings as person names. It seems perfect! 
 
 Jaro-Winkler starts by computing the Jaro distance.
+
+- Concept of matches and transpositions
+- Jaro Distance
+- Jaro-Winkler
+
+![jaro](https://latex.codecogs.com/svg.latex?\Large&space;jaro=\frac{1}{3}*\left%20(%20\frac{m}%20{\left%20|s_{1}\right%20|}%20+%20\frac{m}%20{\left%20|%20s_{2}%20\right%20|}%20+%20\frac{m%20-%20t}{m}%20\right%20)) 
+
 
 
 
